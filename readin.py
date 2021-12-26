@@ -4,6 +4,7 @@ from notion_client import Client
 import pandas as pd
 import pdb
 import markdown
+from keys import notion_key, database_key
 
 
 def getTex(filepath):
@@ -118,8 +119,7 @@ def convertMDtoHTMLwithFiles(md_file, outputFile):
 if __name__ == "__main__":
     test_file = 'testMD.md'
 
-    notion_key = "secret_M5WK7SAzNLfk0S4p3nvYCywdsfcMrfHmjbeSBmyQQ7X"
-    database_key = 'a46622e0eea642ae8ee3866883abb37a'
+
     recentStories = 10
     testMDFile = 'notion2md-output/Tuning-a-Checkerboard-State-2dcfee6ad378491ab38764683ae1d492.md'
 
